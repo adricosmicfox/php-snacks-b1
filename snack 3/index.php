@@ -49,7 +49,6 @@ $keys = array_keys($posts);
 // cicliamo l'array posts
 for ($i = 0; $i < count($posts); $i++) {
     echo $keys[$i] . "<br>";
-
     foreach ($posts[$keys[$i]] as $key => $value) {
         echo $value['author'] . " : " . $value['title'] . " : " . $value['text'] . "<br>";
     }
